@@ -1,0 +1,200 @@
+:orphan:
+
+Day 1: Introduction to Neuroscience and Arduino IDE
+=====================================================
+
+Section 1: Neuroscience & Biopotential Signals
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: What is neuroscience mainly the study of?
+   :correct: B
+   :explanation: Neuroscience is the scientific study of the nervous system, including the brain, spinal cord, and nerves, and how they control behaviour, thought, and the body.
+
+   A. Plants and animals
+   B. The nervous system
+   C. Space science
+   D. Weather systems
+
+.. mcq:: Which of the following is part of the human nervous system?
+   :correct: C
+   :explanation: The brain is the central part of the nervous system. Organs like lungs, liver, and kidney belong to other body systems.
+
+   A. Lungs
+   B. Liver
+   C. Brain
+   D. Kidney
+
+.. mcq:: The nervous system includes:
+   :correct: C
+   :explanation: The nervous system is made up of the brain, spinal cord, and all the peripheral nerves that branch out to every part of the body.
+
+   A. Brain only
+   B. Brain and stomach
+   C. Brain, spinal cord, and peripheral nerves
+   D. Bones and muscles
+
+.. mcq:: Neuroscience is considered a multidisciplinary science because it combines:
+   :correct: C
+   :explanation: Neuroscience draws from biology, psychology, physics, computer science, medicine, and more, making it truly multidisciplinary.
+
+   A. Only biology
+   B. Only computer science
+   C. Many different fields of study
+   D. Only medicine
+
+
+.. mcq:: Which organ controls most activities in the body?
+   :correct: B
+   :explanation: The brain is the control centre of the body, it processes information, controls movement, regulates organs, and generates thought.
+
+   A. Heart
+   B. Brain
+   C. Liver
+   D. Lungs
+
+.. mcq:: What does the spinal cord mainly do?
+   :correct: C
+   :explanation: The spinal cord acts as the main communication highway, relaying signals between the brain and the rest of the body.
+
+   A. Pumps blood
+   B. Helps digestion
+   C. Carries signals between brain and body
+   D. Produces oxygen
+
+.. mcq:: Nerves help in:
+   :correct: A
+   :explanation: Nerves are bundles of axons that carry electrical signals to and from the brain and spinal cord throughout the body.
+
+   A. Carrying electrical signals
+   B. Digesting food
+   C. Cleaning blood
+   D. Making bones
+
+.. mcq:: What are biopotential signals?
+   :correct: C
+   :explanation: Biopotential signals are tiny electrical signals produced naturally by the body's cells, especially neurons and muscle cells, when they are active.
+
+   A. Artificial computer signals
+   B. Signals from satellites
+   C. Tiny electrical signals produced by the body
+   D. Sound waves from muscles
+
+.. mcq:: Which biopotential signal is related to the brain?
+   :correct: B
+   :explanation: EEG (Electroencephalogram) measures the electrical activity of the brain, recorded from electrodes placed on the scalp.
+
+   A. ECG
+   B. EEG
+   C. EMG
+   D. EOG
+
+.. mcq:: Which signal measures muscle activity?
+   :correct: C
+   :explanation: EMG (Electromyogram) records the electrical activity of skeletal muscles during contraction or rest.
+
+   A. EEG
+   B. ECG
+   C. EMG
+   D. EOG
+
+.. mcq:: ECG is used to measure:
+   :correct: D
+   :explanation: ECG (Electrocardiogram) captures the electrical activity of the heart, showing the heart's rhythm and health.
+
+   A. Eye movement
+   B. Brain activity
+   C. Muscle activity
+   D. Heart activity
+
+.. mcq:: EOG is mainly used to detect:
+   :correct: B
+   :explanation: EOG (Electrooculogram) detects the electrical potential difference between the cornea and retina of the eye, which changes as the eye moves.
+
+   A. Heartbeats
+   B. Eye movements
+   C. Brain waves
+   D. Muscle strength
+
+.. mcq:: Which signal helps study meditation and sleep?
+   :correct: B
+   :explanation: EEG captures brain wave patterns (alpha, theta, delta waves) that change during meditation and different sleep stages.
+
+   A. ECG
+   B. EEG
+   C. EMG
+   D. EOG
+
+.. mcq:: Which signal would best help detect if a person blinked?
+   :correct: D
+   :explanation: A blink produces a characteristic spike in the EOG signal because the movement of the eyelid changes the cornea-retina electrical potential.
+
+   A. ECG
+   B. EMG
+   C. EEG
+   D. EOG
+
+Section 2: Arduino Basics & Electronics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: Which Arduino board is most popular for beginners?
+   :correct: A
+   :explanation: The Arduino Uno is the most widely used beginner board due to its simplicity, large community, and abundant learning resources.
+
+   A. Arduino Uno
+   B. Arduino Nano Every 33 IoT
+   C. Raspberry Pi
+   D. ESP8266
+
+.. mcq:: If an LED connected to Arduino suddenly glows, what is MOST likely true?
+   :correct: A
+   :explanation: An LED glows when current flows through it. This happens when the connected pin is set HIGH, providing voltage and allowing current to flow through the LED.
+
+   A. The pin became HIGH
+   B. WiFi is connected
+   C. The battery exploded
+   D. The monitor is ON
+
+.. mcq:: Which pin on Arduino is commonly used to provide power to sensors?
+   :correct: C
+   :explanation: The 5V pin provides a stable 5-volt power supply from the Arduino's onboard regulator, commonly used to power sensors and modules.
+
+   A. GND
+   B. RX
+   C. 5V
+   D. TX
+
+.. mcq:: A student connects both wires of an LED to GND. What will happen?
+   :correct: C
+   :explanation: For current to flow through an LED, one wire must connect to a positive voltage (like 5V or a HIGH pin) and the other to GND. With both wires on GND, there is no potential difference, so no current flows and the LED stays off.
+
+   A. LED becomes brighter
+   B. LED turns ON
+   C. LED stays OFF
+   D. Arduino starts beeping
+
+.. mcq:: Which function runs repeatedly in an Arduino program?
+   :correct: B
+   :explanation: The loop() function runs continuously after setup() completes. All ongoing tasks, reading sensors, sending data, checking conditions, go inside loop().
+
+   A. setup()
+   B. loop()
+   C. start()
+   D. begin()
+
+.. mcq:: Which function runs only once after Arduino powers ON?
+   :correct: C
+   :explanation: The setup() function executes once when the Arduino starts or resets. It is used for one-time initialization, setting pin modes, starting serial communication, etc.
+
+   A. repeat()
+   B. loop()
+   C. setup()
+   D. execute()
+
+.. mcq:: Which command would you MOST likely use to read a sensor value?
+   :correct: B
+   :explanation: analogRead() reads the voltage on an analog pin (A0-A5) and returns a value between 0 and 1023, corresponding to 0-5V. This is how biosignals from BioAmp boards are read.
+
+   A. digitalWrite()
+   B. analogRead()
+   C. Serial.begin()
+   D. tone()

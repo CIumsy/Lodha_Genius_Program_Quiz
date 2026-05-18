@@ -1,0 +1,202 @@
+:orphan:
+
+Day 3: The Power of Sight & Mind (EOG & EEG)
+=============================================
+
+Hour 1: EOG, Eyes as a Controller
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: Which brain wave is most prominent when you close your eyes and relax?
+   :correct: B
+   :explanation: Alpha waves (8-12 Hz) are the signature of a calm, relaxed, awake state. They are strongest when your eyes are closed and disappear (alpha blocking) as soon as you open your eyes or start concentrating.
+
+   A. Delta
+   B. Alpha
+   C. Beta
+   D. Gamma
+
+.. mcq:: Your eye acts like a tiny battery. Which part carries the positive charge?
+   :correct: A
+   :explanation: The cornea (front of the eye) is electrically positive, while the retina (back) is negative. This makes the eyeball a biological electrical dipole whose orientation changes as you move your eye.
+
+   A. The cornea (front)
+   B. The retina (back)
+   C. The eyelid
+   D. The lens
+
+.. mcq:: To track whether a student is looking UP or DOWN, where should you place the electrodes?
+   :correct: B
+   :explanation: Vertical eye movements change the voltage difference along the vertical axis. Placing one electrode above the eye and one below captures this up-down dipole shift accurately.
+
+   A. Left temple and right temple
+   B. Above the eye and below the eye
+   C. On the tip of the nose
+   D. On the back of the neck
+
+.. mcq:: Why does a blink show up as a massive spike on an EOG graph?
+   :correct: B
+   :explanation: When the eyelid sweeps over the cornea during a blink, it rapidly changes the orientation of the eye dipole, creating a large and sudden voltage shift that appears as a sharp spike.
+
+   A. The brain shuts down completely.
+   B. The eyelid moving over the cornea creates a sharp electrical change.
+   C. The eye turns upside down.
+   D. The iris changes color.
+
+.. mcq:: What is a major advantage of EOG over camera-based eye trackers?
+   :correct: B
+   :explanation: EOG requires only a few electrodes and minimal computing resources. It also continues to detect eye movement in complete darkness or even when the eyes are closed, unlike cameras.
+
+   A. It reads exact thoughts.
+   B. It requires less computer power and works even with eyes closed.
+   C. It does not need to touch the skin.
+   D. It shoots lasers to track movement.
+
+.. mcq:: While recording EOG, laughing causes messy, chaotic waves. What are these called?
+   :correct: B
+   :explanation: Facial muscle contractions from laughing, talking, or chewing generate their own EMG signals that contaminate the EOG recording. These unwanted signals are called muscle artifacts.
+
+   A. Brainwaves
+   B. Muscle artifacts
+   C. Neural networks
+   D. Voltage drops
+
+.. mcq:: Your EOG signal slowly drifts upward over time even when staring straight. How do you fix this in code?
+   :correct: C
+   :explanation: Slow baseline drift is common in biopotential recordings due to electrode-skin chemistry changing over time. A high-pass filter removes the slow drift while keeping the fast eye-movement signals intact. Baseline correction achieves the same effect.
+
+   A. Multiply the data by a million
+   B. Tell the user not to blink
+   C. Use a baseline correction or high-pass filter
+   D. Restart the computer
+
+.. mcq:: Why do we need a ground electrode behind the ear or on the forehead?
+   :correct: B
+   :explanation: The ground (reference) electrode provides a common electrical baseline for the amplifier. Any ambient electrical noise present equally at all electrodes gets subtracted out, leaving only the true biological signal.
+
+   A. To shock the user when they make a mistake
+   B. To cancel out ambient electrical noise from the room
+   C. To hold the headset in place
+   D. To measure skull temperature
+
+.. mcq:: How does a threshold help an EOG algorithm?
+   :correct: A
+   :explanation: Eyes naturally make tiny involuntary tremors called microsaccades. A threshold filters these out so only large, intentional looks trigger a command, preventing accidental activations.
+
+   A. It ignores tiny random eye tremors and only triggers on big, deliberate looks.
+   B. It randomizes the cursor movements.
+   C. It speeds up the hardware.
+   D. It saves battery life.
+
+Hour 2: Introduction to EEG & BCI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: What are scalp EEG electrodes actually listening to?
+   :correct: B
+   :explanation: Individual neuron spikes are far too small to detect through the skull. EEG picks up the combined, synchronized electrical fields produced when large populations of neurons fire together, creating voltages detectable at the scalp.
+
+   A. The sound of blood rushing
+   B. The synchronized electrical activity of millions of neurons
+   C. Physical movements of skull bones
+   D. English words forming in the mind
+
+.. mcq:: What are the three essential steps in a Brain-Computer Interface (BCI) loop?
+   :correct: C
+   :explanation: Every BCI follows this pipeline: (1) acquire the raw brain signal with electrodes, (2) use algorithms to decode what the signal means, and (3) send the decoded command to a device such as a cursor, wheelchair, or robotic arm.
+
+   A. Type, click, print
+   B. Drill, implant, shock
+   C. Record signals, decode meaning, output action
+   D. Read, write, memorize
+
+.. mcq:: You are solving a difficult math problem under pressure. Which fast brainwave (12-30 Hz) increases?
+   :correct: D
+   :explanation: Beta waves (13-30 Hz) are associated with active, analytical thinking, concentration, and alertness. Challenging cognitive tasks consistently increase beta power in EEG recordings.
+
+   A. Delta
+   B. Theta
+   C. Alpha
+   D. Beta
+
+.. mcq:: How does a Neurofeedback meditation app help you calm down?
+   :correct: B
+   :explanation: Neurofeedback uses real-time EEG data to give the user instant feedback. When the app detects increasing alpha (relaxation) waves, it rewards the user with calming audio, reinforcing the relaxed brain state through conditioning.
+
+   A. It gives you a mild shock when stressed.
+   B. It plays peaceful sounds only when your relaxation waves increase.
+   C. It forces your eyes open.
+   D. It flashes bright lights.
+
+.. mcq:: Why must we use conductive gel or paste with EEG electrodes?
+   :correct: B
+   :explanation: Hair and dry skin have high electrical resistance that attenuates the already tiny EEG signals (10-100 uV). Conductive gel fills the microscopic gaps between the electrode and skin, dramatically reducing impedance and improving signal quality.
+
+   A. To glue the sensor permanently to the head
+   B. To bypass the electrical resistance of hair and dry skin
+   C. To cool down the brain
+   D. To dye the hair for tracking
+
+.. mcq:: Clenching your jaw during an EEG test ruins the data. Why?
+   :correct: B
+   :explanation: Jaw and temple muscles produce EMG signals many times larger than brain waves. These muscle artifacts completely overwhelm the tiny EEG voltages, making the recording unusable until the participant relaxes their jaw.
+
+   A. The brain stops working.
+   B. Jaw muscles create massive electrical noise (EMG) that drowns out the brain waves.
+   C. The headset breaks under pressure.
+   D. It triggers deep meditation.
+
+.. mcq:: If you want to capture brainwaves from the visual cortex, where should you place the sensor?
+   :correct: B
+   :explanation: The visual cortex is located in the occipital lobe at the very back of the head. EEG electrodes placed there (positions O1, O2, Oz in the 10-20 system) pick up visual processing signals most clearly.
+
+   A. On the bridge of the nose
+   B. At the very back of the head (occipital lobe)
+   C. On the tip of the ear
+   D. On the forehead
+
+Hour 3: HCI & BCI for Fun (EMG Games)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: You play the Chrome Dino game by flexing your arm to jump. What signal is this?
+   :correct: C
+   :explanation: Flexing your arm involves contracting skeletal muscles, which generates an EMG (Electromyogram) signal. The Muscle BioAmp Shield captures this signal and the thresholding algorithm triggers the jump command when the EMG crosses a set level.
+
+   A. EEG
+   B. EOG
+   C. EMG
+   D. ECG
+
+.. mcq:: Your Dino jumps constantly even when your arm is relaxed. What should you do to your code threshold?
+   :correct: B
+   :explanation: If the threshold is too low, even baseline noise or tiny involuntary muscle activity triggers a jump. Raising the threshold means only a deliberate, strong flex will cross it, eliminating false triggers.
+
+   A. Lower it to zero
+   B. Increase the threshold value so it requires a stronger flex
+   C. Delete the code
+   D. Turn off the monitor
+
+.. mcq:: What makes an HCI biosignal interface different from a standard game controller?
+   :correct: B
+   :explanation: Traditional controllers require deliberate mechanical actions such as button presses or joystick movement. A biosignal HCI interface reads body electrical signals, muscle contractions, eye movements, or brain waves, directly, enabling hands-free or movement-free control.
+
+   A. It does not use any electricity.
+   B. It reads body signals directly without needing a mechanical button press.
+   C. It only works when you are happy.
+   D. It cannot play video games.
+
+.. mcq:: Why is a muscle-controlled game (EMG) easier for beginners than a brain-controlled game (EEG)?
+   :correct: A
+   :explanation: Muscles produce strong (millivolt-level), deliberate, instantly controllable signals. Brain waves are extremely small (microvolt-level), highly variable, and require training and practice to control reliably.
+
+   A. Muscle signals are voluntary, strong, and easy to control instantly.
+   B. The brain does not make electricity.
+   C. EMG signals do not use a computer.
+   D. EEG waves are too large to capture.
+
+.. mcq:: EOG, EEG, and EMG all measure body electricity. What is the ultimate biological source of these voltages?
+   :correct: C
+   :explanation: All biological electrical signals originate from the same fundamental process: ions (charged atoms like Na+, K+, Ca2+) flowing across the cell membrane through ion channels. This ionic current creates the voltage differences that electrodes detect on the skin surface.
+
+   A. Metal wires in our veins
+   B. Static friction from walking on carpets
+   C. The movement of charged ions across cellular membranes
+   D. Tiny nuclear reactions in the stomach
