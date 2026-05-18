@@ -1036,16 +1036,19 @@ dt:target,
 }
 
 /* ── Mobile Header Logo ────────────────────────────────────────────────── */
-.mobile-header .brand::before {
-  content: "";
-  display: inline-block;
-  background-image: url('../LOGO.png');
+.mobile-header .brand {
+  font-size: 0 !important; /* Hide the text */
+  background-image: url('../LOGO-mobile.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 28px;
-  height: 28px;
-  vertical-align: middle;
-  margin-right: 10px;
-  margin-bottom: 2px;
+  width: 55vw;         /* Scale relative to viewport */
+  max-width: 220px;    /* But not too wide */
+  height: 36px;        /* Fit within mobile header */
+  display: block;
+  margin: 0 auto;
+}
+
+.mobile-header .brand::before {
+  display: none !important;
 }
