@@ -1034,3 +1034,18 @@ dt:target,
   background: var(--pl) !important;
   background-color: var(--pl) !important;
 }
+
+/* ── Mobile Header Logo ────────────────────────────────────────────────── */
+.mobile-header .brand::before {
+  content: "";
+  display: inline-block;
+  background-image: url('../LOGO.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
