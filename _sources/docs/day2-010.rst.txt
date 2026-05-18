@@ -1,0 +1,187 @@
+:orphan:
+
+Day 2: Visualizing the Body (EMG & ECG)
+========================================
+
+Day 2 Quiz
+----------
+
+.. mcq:: Where should the REF electrode be placed?
+   :correct: B
+   :explanation: The REF electrode must be placed on an electrically neutral site, a bony area with no muscle underneath, such as the elbow, wrist, or ankle. This gives the amplifier a stable reference point.
+
+   A. On the belly of the muscle being recorded
+   B. On a bony area like the elbow or wrist
+   C. 2 cm away from IN+
+   D. Anywhere on the skin surface
+
+.. mcq:: What does the QRS complex in an ECG represent?
+   :correct: A
+   :explanation: The QRS complex represents ventricular depolarisation, the main pumping contraction of the heart lower chambers (ventricles). It is the largest feature on a normal ECG trace.
+
+   A. The lower chambers (ventricles) contracting to pump blood
+   B. The upper chambers (atria) receiving a signal
+   C. The heart resetting between beats
+   D. Blood flowing through the aorta
+
+.. mcq:: What technique does the BioAmp use to cancel out 50 Hz power-line noise?
+   :correct: D
+   :explanation: Differential measurement amplifies only the difference between IN+ and IN-. External noise (like 50 Hz interference from mains electricity) is identical on both electrodes, so it subtracts to zero and disappears from the output.
+
+   A. High-pass filtering only
+   B. Increasing the sampling rate
+   C. Placing the REF electrode further away
+   D. Differential measurement between IN+ and IN-
+
+.. mcq:: Which situation would MOST likely create an EMG signal?
+   :correct: B
+   :explanation: EMG records electrical activity from skeletal muscles during contraction. Flexing your bicep is a direct muscle contraction, producing a clear EMG signal.
+
+   A. Blinking eyes
+   B. Flexing your bicep
+   C. Sleeping deeply
+   D. Listening to music
+
+.. mcq:: Which body signal would doctors MOST likely use to monitor heartbeat patterns?
+   :correct: C
+   :explanation: ECG (Electrocardiogram) records the heart electrical activity, showing its rhythm and detecting abnormalities, making it the standard tool for monitoring heartbeat patterns.
+
+   A. EMG
+   B. EEG
+   C. ECG
+   D. EOG
+
+.. mcq:: Before recording body signals, why is skin preparation important?
+   :correct: B
+   :explanation: Proper skin preparation removes dead cells and oils that increase impedance, directly improving signal quality by reducing noise at the electrode-skin interface.
+
+   A. To make the skin colorful
+   B. To reduce noise and improve signal quality
+   C. To charge the electrodes
+   D. To increase the signal frequency
+
+.. mcq:: Electrodes act like:
+   :correct: B
+   :explanation: Electrodes are transducers, they sit on the skin and pick up the tiny electrical potentials produced by underlying muscles or the heart, converting them into signals the amplifier can process.
+
+   A. Tiny cameras
+   B. Signal collectors from the body
+   C. Batteries
+   D. Speakers
+
+.. mcq:: Which software can be used to visualize body signals?
+   :correct: C
+   :explanation: Both the Arduino IDE Serial Plotter and the Chords Software Suite can display real-time biosignal graphs from BioAmp hardware.
+
+   A. Arduino IDE
+   B. Chords Software Suite
+   C. Both A and B
+   D. MS Paint
+
+.. mcq:: Human-Computer Interaction (HCI) means:
+   :correct: B
+   :explanation: HCI is the field of study and design focused on how people interact with computers and other digital devices, including using biosignals like EMG to control machines.
+
+   A. Humans talking only to humans
+   B. Interaction between humans and machines
+   C. Repairing computers
+   D. Building robots only
+
+.. mcq:: A gesture-controlled computer system would MOST likely depend on:
+   :correct: A
+   :explanation: Gestures involve muscle movement. EMG sensors on the forearm or hand can detect which gesture is being made and translate it into a computer command.
+
+   A. EMG signals from forearm muscles
+   B. EEG brain waves
+   C. ECG heart rhythms
+   D. EOG eye movements
+
+.. mcq:: The Muscle BioAmp Shield is MOST useful for students who want to:
+   :correct: A
+   :explanation: The Muscle BioAmp Shield is designed to acquire, amplify, and visualise surface EMG signals, making it ideal for hands-on exploration of muscle activity.
+
+   A. Record and visualise EMG signals from muscles
+   B. Record brain waves using EEG
+   C. Measure heart activity using ECG
+   D. Track eye movements using EOG
+
+.. mcq:: LEDs connected to EMG signals can help us:
+   :correct: B
+   :explanation: By mapping EMG amplitude to LED brightness or number of LEDs lit, students get an immediate visual representation of how muscle contraction strength changes in real time.
+
+   A. Hear colours
+   B. Visually understand muscle activity
+   C. Increase internet speed
+   D. Charge sensors
+
+.. mcq:: Listening to muscle signals helps students understand that:
+   :correct: A
+   :explanation: When muscle EMG is converted to audio, the crackling or buzzing sound during contraction makes it immediately clear that muscles generate electrical (and therefore audible) activity.
+
+   A. Muscles produce electrical activity
+   B. Muscles contain speakers
+   C. Muscles store music
+   D. Signals are invisible forever
+
+.. mcq:: Which device can help convert muscle activity into sound?
+   :correct: A
+   :explanation: The Muscle BioAmp Shield can route the amplified EMG signal to a speaker or headphone output, letting you literally hear your muscles contracting.
+
+   A. Muscle BioAmp Shield
+   B. BioAmp EXG Pill
+   C. Heart BioAmp Candy
+   D. NeuroPlayground Lite
+
+.. mcq:: Which organ keeps producing rhythmic electrical signals even while sleeping?
+   :correct: A
+   :explanation: The heart beats continuously, roughly 60-100 times per minute, driven by its own electrical pacemaker (the SA node), regardless of whether you are awake or asleep.
+
+   A. Heart
+   B. Stomach
+   C. Liver
+   D. Skin
+
+.. mcq:: Which setup would BEST help students visualize their heartbeat on a screen?
+   :correct: A
+   :explanation: The BioAmp EXG Pill is designed for ECG recording. Combined with gel electrodes in the correct placement and connected to a Serial Plotter or Chords, it produces a clear PQRST waveform on screen.
+
+   A. BioAmp EXG Pill with electrodes
+   B. Muscle BioAmp Shield
+   C. Heart BioAmp Candy
+   D. NeuroPlayground Lite
+
+.. mcq:: Which signal is MOST useful for studying exercise intensity?
+   :correct: C
+   :explanation: During exercise, both EMG (muscle contraction effort) and ECG (heart rate) change significantly. Together they give a complete picture of exercise intensity from both muscular and cardiovascular perspectives.
+
+   A. ECG
+   B. EMG
+   C. Both ECG and EMG
+   D. EOG
+
+.. mcq:: Which of the following can reduce signal noise?
+   :correct: D
+   :explanation: Good signal quality depends on all three: abrading the skin reduces impedance, correct electrode positioning captures the target signal, and secure connections prevent motion artifacts.
+
+   A. Proper skin preparation
+   B. Correct electrode placement
+   C. Stable connections
+   D. All of the above
+
+.. mcq:: Why do biosignal graphs move up and down on screen?
+   :correct: A
+   :explanation: The graph traces the continuously changing voltage measured at the electrodes. As muscles contract or the heart beats, the electrical potential rises and falls, causing the waveform to move.
+
+   A. Because the body produces changing electrical signals
+   B. Because the monitor is broken
+   C. Because gravity changes
+   D. Because Arduino draws randomly
+
+.. mcq:: Which activity is BEST for observing ECG signals clearly?
+   :correct: B
+   :explanation: Sitting calmly minimises motion artifacts and muscle noise. Physical activity introduces large EMG signals and movement noise that can obscure the smaller ECG waveform.
+
+   A. Running fast
+   B. Sitting calmly
+   C. Jumping continuously
+   D. Shaking electrodes

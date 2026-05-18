@@ -1,0 +1,379 @@
+Day 1: Introduction to Neuroscience and Arduino IDE
+=====================================================
+
+**Objective:** Transition from biological concepts to hardware basics.
+
+----
+
+Hour 1: Getting Started
+-----------------------
+
+Welcome to the Upside Down Labs neuroscience workshop! Over the next 5 days, you will
+discover how your own body generates electricity — and how to record and use those signals
+to control machines.
+
+**What you will build towards:**
+
+- Recording your brain waves, muscle signals, heart beats, and eye movements
+- Building real Brain-Computer Interfaces (BCIs)
+- Playing games and controlling devices with your body signals
+
+**Hardware you'll use:**
+
+- **DIY Neuroscience Kit - Pro** — for recording biosignals
+- **BLE BCI Car + NPG Lite (Ninja Kit)** — for BCI games and experiments
+
+----
+
+Hour 2: The Electricity Inside You
+------------------------------------
+
+Your body runs on electricity. Every time you think, move, blink, or feel your heart beat,
+your nervous system is generating tiny electrical signals. In this session we explore where
+those signals come from.
+
+The Human Nervous System
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Think of your nervous system as the internet of your body — it sends messages between your
+brain and every part of your body at speeds over 120 metres per second.
+
+It has two main parts:
+
+- **Central Nervous System (CNS):** Your brain and spinal cord. This is the command centre.
+- **Peripheral Nervous System (PNS):** All the nerves branching out from the spinal cord to
+  your muscles, skin, organs, and senses.
+
+**The Brain**
+
+The brain has three major regions:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 75
+
+   * - Region
+     - What it does
+   * - Cerebrum
+     - Thinking, memory, movement, speech, and your senses. Divided into four lobes.
+   * - Cerebellum
+     - Balance and coordination. It has more neurons than the rest of the brain, even though
+       it is only 10% of the brain's volume.
+   * - Brainstem
+     - Controls automatic functions like heart rate, breathing, and blood pressure.
+
+**Neurons — The Messengers**
+
+Neurons are the cells that carry electrical signals. They are the longest cells in the human
+body — a single neuron can be over 1 metre long!
+
+Key parts of a neuron:
+
+- **Dendrites** — receive signals from other neurons
+- **Cell body (Soma)** — the core of the neuron
+- **Axon** — sends the signal forward
+- **Myelin sheath** — insulates the axon, making signals travel faster
+- **Synapse** — the tiny gap where one neuron passes a signal to the next
+
+**Fun fact:** The brain contains about 86 billion neurons connected by 100 trillion synapses.
+Despite being only 2% of your body weight, it uses 20% of your body's total energy.
+
+Biopotential Signals
+~~~~~~~~~~~~~~~~~~~~
+
+When groups of neurons or muscle cells fire together, they create electrical signals
+strong enough to be detected on your skin surface. These are called **biopotential signals**.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 15 25 25 35
+
+   * - Signal
+     - Full Name
+     - Source
+     - Typical Range
+   * - EEG
+     - Electroencephalogram
+     - Brain (neurons)
+     - 10–100 µV, 0.5–100 Hz
+   * - EMG
+     - Electromyogram
+     - Skeletal muscles
+     - 0–10 mV, 0–500 Hz
+   * - ECG
+     - Electrocardiogram
+     - Heart muscle
+     - 10 µV–5 mV, 0.05–100 Hz
+   * - EOG
+     - Electrooculogram
+     - Eyes (cornea-retina)
+     - 100–3500 µV, 0.1–20 Hz
+
+These signals are incredibly small (microvolts = millionths of a volt), so our BioAmp
+hardware amplifies them by up to 1000× before we can read them.
+
+**Real-world applications:**
+
+- EEG → Diagnose epilepsy, control prosthetic limbs, meditate with neurofeedback
+- EMG → Robotic arms, prosthetics, video game controllers
+- ECG → Heart monitors, fitness trackers, portable health devices
+- EOG → Assistive tech for paralysed patients, drowsiness detection in drivers
+
+----
+
+Hour 3: Meet Your Tools
+------------------------
+
+**The DIY Neuroscience Kit**
+
+The kit contains BioAmp boards that amplify and filter biosignals so a microcontroller
+can read them. All hardware is open-source — the circuit diagrams and code are freely
+available on GitHub.
+
+**The Arduino IDE**
+
+Arduino is a simple programming platform used to read signals from your BioAmp board and
+send them to a computer or display.
+
+Key concepts:
+
+- ``setup()`` — runs once when the Arduino starts
+- ``loop()`` — runs forever, reading and sending data
+- ``Serial.begin(115200)`` — opens communication with your PC at 115200 bits per second
+- ``analogRead(A0)`` — reads the biosignal voltage from pin A0
+
+Overview of the Arduino IDE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Arduino IDE (Integrated Development Environment) is the software you use to write, edit, and upload code (called "sketches") to your Arduino board. It provides:
+
+- A code editor for writing Arduino programs
+- A message area for errors and status
+- A text console for output
+- A toolbar with buttons for common functions (verify, upload, open, save, etc.)
+- A menu to select your board type and the correct port
+
+Understanding the Arduino Board Layout and Pin Functions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+An Arduino board (like the Uno) has:
+
+- **Digital pins (0–13):** Used for digital input/output (HIGH/LOW)
+- **Analog pins (A0–A5):** Used for reading analog signals (like biosignals)
+- **Power pins:** 3.3V, 5V, GND for powering sensors and modules
+- **USB port:** For programming and serial communication
+- **Reset button:** Restarts the program
+
+Uploading Your First Sketch
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+To upload your first sketch:
+
+1. Connect your Arduino board to your computer via USB.
+2. Open the Arduino IDE.
+3. Select the correct board and port from the Tools menu.
+4. Write or open a sketch (e.g., the Blink example).
+5. Click the Upload button (right arrow icon).
+6. Wait for the "Done uploading" message.
+
+If the onboard LED blinks, your upload was successful!
+
+**Activity:** Navigate the GitHub repository and upload your first sketch to Arduino.
+
+----
+
+Day 1 Quiz
+----------
+
+Section 1: Neuroscience & Biopotential Signals
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: What is neuroscience mainly the study of?
+   :correct: B
+   :explanation: Neuroscience is the scientific study of the nervous system — including the brain, spinal cord, and nerves — and how they control behaviour, thought, and the body.
+
+   A. Plants and animals
+   B. The nervous system
+   C. Space science
+   D. Weather systems
+
+.. mcq:: Which of the following is part of the human nervous system?
+   :correct: C
+   :explanation: The brain is the central part of the nervous system. Organs like lungs, liver, and kidney belong to other body systems.
+
+   A. Lungs
+   B. Liver
+   C. Brain
+   D. Kidney
+
+.. mcq:: The nervous system includes:
+   :correct: C
+   :explanation: The nervous system is made up of the brain, spinal cord, and all the peripheral nerves that branch out to every part of the body.
+
+   A. Brain only
+   B. Brain and stomach
+   C. Brain, spinal cord, and peripheral nerves
+   D. Bones and muscles
+
+.. mcq:: Neuroscience is considered a multidisciplinary science because it combines:
+   :correct: C
+   :explanation: Neuroscience draws from biology, psychology, physics, computer science, medicine, and more — making it truly multidisciplinary.
+
+   A. Only biology
+   B. Only computer science
+   C. Many different fields of study
+   D. Only medicine
+
+
+.. mcq:: Which organ controls most activities in the body?
+   :correct: B
+   :explanation: The brain is the control centre of the body — it processes information, controls movement, regulates organs, and generates thought.
+
+   A. Heart
+   B. Brain
+   C. Liver
+   D. Lungs
+
+.. mcq:: What does the spinal cord mainly do?
+   :correct: C
+   :explanation: The spinal cord acts as the main communication highway, relaying signals between the brain and the rest of the body.
+
+   A. Pumps blood
+   B. Helps digestion
+   C. Carries signals between brain and body
+   D. Produces oxygen
+
+.. mcq:: Nerves help in:
+   :correct: A
+   :explanation: Nerves are bundles of axons that carry electrical signals to and from the brain and spinal cord throughout the body.
+
+   A. Carrying electrical signals
+   B. Digesting food
+   C. Cleaning blood
+   D. Making bones
+
+.. mcq:: What are biopotential signals?
+   :correct: C
+   :explanation: Biopotential signals are tiny electrical signals produced naturally by the body's cells — especially neurons and muscle cells — when they are active.
+
+   A. Artificial computer signals
+   B. Signals from satellites
+   C. Tiny electrical signals produced by the body
+   D. Sound waves from muscles
+
+.. mcq:: Which biopotential signal is related to the brain?
+   :correct: B
+   :explanation: EEG (Electroencephalogram) measures the electrical activity of the brain, recorded from electrodes placed on the scalp.
+
+   A. ECG
+   B. EEG
+   C. EMG
+   D. EOG
+
+.. mcq:: Which signal measures muscle activity?
+   :correct: C
+   :explanation: EMG (Electromyogram) records the electrical activity of skeletal muscles during contraction or rest.
+
+   A. EEG
+   B. ECG
+   C. EMG
+   D. EOG
+
+.. mcq:: ECG is used to measure:
+   :correct: D
+   :explanation: ECG (Electrocardiogram) captures the electrical activity of the heart, showing the heart's rhythm and health.
+
+   A. Eye movement
+   B. Brain activity
+   C. Muscle activity
+   D. Heart activity
+
+.. mcq:: EOG is mainly used to detect:
+   :correct: B
+   :explanation: EOG (Electrooculogram) detects the electrical potential difference between the cornea and retina of the eye, which changes as the eye moves.
+
+   A. Heartbeats
+   B. Eye movements
+   C. Brain waves
+   D. Muscle strength
+
+.. mcq:: Which signal helps study meditation and sleep?
+   :correct: B
+   :explanation: EEG captures brain wave patterns (alpha, theta, delta waves) that change during meditation and different sleep stages.
+
+   A. ECG
+   B. EEG
+   C. EMG
+   D. EOG
+
+.. mcq:: Which signal would best help detect if a person blinked?
+   :correct: D
+   :explanation: A blink produces a characteristic spike in the EOG signal because the movement of the eyelid changes the cornea-retina electrical potential.
+
+   A. ECG
+   B. EMG
+   C. EEG
+   D. EOG
+
+Section 2: Arduino Basics & Electronics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: Which Arduino board is most popular for beginners?
+   :correct: A
+   :explanation: The Arduino Uno is the most widely used beginner board due to its simplicity, large community, and abundant learning resources.
+
+   A. Arduino Uno
+   B. Arduino Nano Every 33 IoT
+   C. Raspberry Pi
+   D. ESP8266
+
+.. mcq:: If an LED connected to Arduino suddenly glows, what is MOST likely true?
+   :correct: A
+   :explanation: An LED glows when current flows through it. This happens when the connected pin is set HIGH, providing voltage and allowing current to flow through the LED.
+
+   A. The pin became HIGH
+   B. WiFi is connected
+   C. The battery exploded
+   D. The monitor is ON
+
+.. mcq:: Which pin on Arduino is commonly used to provide power to sensors?
+   :correct: C
+   :explanation: The 5V pin provides a stable 5-volt power supply from the Arduino's onboard regulator, commonly used to power sensors and modules.
+
+   A. GND
+   B. RX
+   C. 5V
+   D. TX
+
+.. mcq:: A student connects both wires of an LED to GND. What will happen?
+   :correct: C
+   :explanation: For current to flow through an LED, one wire must connect to a positive voltage (like 5V or a HIGH pin) and the other to GND. With both wires on GND, there is no potential difference, so no current flows and the LED stays off.
+
+   A. LED becomes brighter
+   B. LED turns ON
+   C. LED stays OFF
+   D. Arduino starts beeping
+
+.. mcq:: Which function runs repeatedly in an Arduino program?
+   :correct: B
+   :explanation: The loop() function runs continuously after setup() completes. All ongoing tasks — reading sensors, sending data, checking conditions — go inside loop().
+
+   A. setup()
+   B. loop()
+   C. start()
+   D. begin()
+
+.. mcq:: Which function runs only once after Arduino powers ON?
+   :correct: C
+   :explanation: The setup() function executes once when the Arduino starts or resets. It is used for one-time initialization — setting pin modes, starting serial communication, etc.
+
+   A. repeat()
+   B. loop()
+   C. setup()
+   D. execute()
+
+.. mcq:: Which command would you MOST likely use to read a sensor value?
+   :correct: B
+   :explanation: analogRead() reads the voltage on an analog pin (A0–A5) and returns a value between 0 and 1023, corresponding to 0–5V. This is how biosignals from BioAmp boards are read.
+
+   A. digitalWrite()
+   B. analogRead()
+   C. Serial.begin()
+   D. tone()

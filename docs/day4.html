@@ -1,0 +1,743 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Day 5: Advanced HCI/BCI, Research and Applications" href="day5.html"><link rel="prev" title="Day 3: The Power of Sight &amp; Mind (EOG &amp; EEG)" href="day3.html">
+        <link rel="prefetch" href="../_static/UDL_logo_white.png" as="image">
+
+    <link rel="shortcut icon" href="../_static/UDL_logo_white.png"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Day 4: Gaming in the Field of HCI and BCI - Upside Down Labs</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/udl_custom.css?v=45bea5ae" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --color-brand-primary: #7c3aed;
+  --color-brand-content: #7c3aed;
+  --color-background-primary: #000000;
+  --color-background-secondary: #ffffff;
+  --color-foreground-primary: #111827;
+  --color-foreground-secondary: #6b7280;
+  --color-sidebar-background: #ffffff;
+  --color-sidebar-background-border: #f3f0ff;
+  --color-sidebar-brand-text: #111827;
+  --color-sidebar-caption-text: #9ca3af;
+  --color-sidebar-link-text: #374151;
+  --color-sidebar-link-text--top-level: #111827;
+  --color-sidebar-item-background--current: #f5f3ff;
+  --color-sidebar-item-background--hover: #fafafa;
+  --color-sidebar-search-background: #f9fafb;
+  --color-sidebar-search-border-color: #d8b4fe;
+  --color-sidebar-search-icon: #7c3aed;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Upside Down Labs</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/UDL_logo_white.png" alt="Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="day1.html">Day 1: Introduction to Neuroscience and Arduino IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">Day 2: Visualizing the Body (EMG &amp; ECG)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day3.html">Day 3: The Power of Sight &amp; Mind (EOG &amp; EEG)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Day 4: Gaming in the Field of HCI and BCI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day5.html">Day 5: Advanced HCI/BCI, Research and Applications</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/docs/day4.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="day-4-gaming-in-the-field-of-hci-and-bci">
+<h1>Day 4: Gaming in the Field of HCI and BCI<a class="headerlink" href="#day-4-gaming-in-the-field-of-hci-and-bci" title="Link to this heading">¶</a></h1>
+<p><strong>Objective:</strong> Apply learned skills to play HCI &amp; BCI games using your own body signals.</p>
+<hr class="docutils" />
+<section id="meet-the-neuro-playground-lite-npg-lite">
+<h2>Meet the Neuro PlayGround Lite (NPG Lite)<a class="headerlink" href="#meet-the-neuro-playground-lite-npg-lite" title="Link to this heading">¶</a></h2>
+<p>The <strong>Neuro PlayGround Lite (NPG Lite)</strong> is a compact, all-in-one biosignal board
+designed for BCI applications. It is part of the <strong>Ninja Kit</strong> used in this course.</p>
+<p><strong>What NPG Lite can do:</strong></p>
+<ul class="simple">
+<li><p>Record EEG, EMG, ECG, and EOG signals</p></li>
+<li><p>Send data wirelessly via <strong>BLE (Bluetooth Low Energy)</strong></p></li>
+<li><p>Connect to a laptop, phone, or Raspberry Pi without USB cables</p></li>
+<li><p>Run simple classification algorithms to trigger actions in real time</p></li>
+</ul>
+<p><strong>Why BLE?</strong></p>
+<p>Wired connections limit movement and can introduce motion artefacts (noise from the
+cable moving). BLE lets you move freely while your signals are streamed to the computer,
+which is essential for games and robotics.</p>
+</section>
+<hr class="docutils" />
+<section id="applications-of-npg-lite">
+<h2>Applications of NPG Lite<a class="headerlink" href="#applications-of-npg-lite" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Application</p></th>
+<th class="head"><p>How it works</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Click photo with eye signals</strong></p></td>
+<td><p>A deliberate upward eye movement (EOG spike) triggers the camera shutter</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Play Dino game with eyes</strong></p></td>
+<td><p>A blink (detected as a sharp EOG pulse) sends a “jump” command to the game</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Servo Claw game</strong></p></td>
+<td><p>Your grip strength (EMG amplitude) controls a servo motor claw — squeeze to
+close it, relax to open it. Stack objects to win!</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="activity-the-servo-claw-challenge">
+<h2>Activity: The Servo Claw Challenge<a class="headerlink" href="#activity-the-servo-claw-challenge" title="Link to this heading">¶</a></h2>
+<p>The servo claw is connected to an Arduino that reads your EMG signal:</p>
+<ol class="arabic simple">
+<li><p>Place the EMG electrodes on your forearm (IN+, IN−, REF as practised on Day 2)</p></li>
+<li><p>The Arduino reads the signal on analog pin A0</p></li>
+<li><p>A thresholding algorithm maps your grip force to the claw angle (0°–180°)</p></li>
+<li><p>Pick up small objects and stack them — the team with the tallest stack wins!</p></li>
+</ol>
+<p>This is the same principle used in <strong>prosthetic hands</strong> for amputees.</p>
+</section>
+<hr class="docutils" />
+<section id="day-4-quiz">
+<h2>Day 4 Quiz<a class="headerlink" href="#day-4-quiz" title="Link to this heading">¶</a></h2>
+<div class="udl-mcq" id="mcq-2370e3d3" data-correct="2">
+  <div class="udl-mcq__question">What does BLE stand for?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Brain Link Electronics</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Biosignal Level Encoder</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Bluetooth Low Energy</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Biological Learning Engine</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> BLE stands for Bluetooth Low Energy. It transmits data wirelessly over short distances while using very little battery power — ideal for wearable biosignal devices.</div>
+</div><div class="udl-mcq" id="mcq-3c31fb56" data-correct="0">
+  <div class="udl-mcq__question">In the Servo Claw game, which biosignal controls the claw?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">EMG (muscle signal from the forearm)</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">EEG (brain waves)</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">ECG (heart signal)</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">EOG (eye movement)</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> EMG (muscle signal) from the forearm is used. The amplitude of the EMG signal corresponds to how hard you are squeezing — stronger grip = higher EMG amplitude = claw closes further.</div>
+</div><div class="udl-mcq" id="mcq-a3c0f850" data-correct="1">
+  <div class="udl-mcq__question">Why is wireless (BLE) transmission preferred over a wired USB cable for BCI games?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">BLE signals have higher resolution than USB</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">It allows free movement and avoids motion artefacts from cable pulling</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">USB cannot transmit biosignals at all</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">BLE automatically filters noise before transmission</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> A cable physically restricts movement and can pull on the electrodes, generating motion artefacts (false signals from the cable moving). Wireless BLE removes both problems, allowing free movement and cleaner signals.</div>
+</div><section id="section-1-neuro-playground-lite-npg-lite-overview">
+<h3>Section 1: Neuro PlayGround Lite (NPG Lite) Overview<a class="headerlink" href="#section-1-neuro-playground-lite-npg-lite-overview" title="Link to this heading">¶</a></h3>
+<div class="udl-mcq" id="mcq-5accb075" data-correct="1">
+  <div class="udl-mcq__question">What distinct hardware layout style does the Neuro PlayGround Lite (NPG Lite) follow to easily stack expansion modules?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Raspberry Pi HAT form-factor</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Adafruit Feather form-factor</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Arduino Mega dual-row layout</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Standalone mikroBUS format</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The NPG Lite follows the Adafruit Feather form-factor, a widely adopted open standard that makes it easy to stack compatible &quot;Wing&quot; shields and expansion boards directly on top of the main board.</div>
+</div><div class="udl-mcq" id="mcq-bf706d29" data-correct="2">
+  <div class="udl-mcq__question">Which wireless communications standard does the NPG Lite natively support for a wireless, hassle-free signal experience?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Infrared Line-of-Sight</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Cellular 5G</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Bluetooth / Wi-Fi mesh networking</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">AM/FM Radio transmission</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The NPG Lite has an onboard Bluetooth / Wi-Fi module, allowing it to stream biosignals wirelessly to a laptop, phone, or web browser without any USB cable — essential for free-movement BCI games.</div>
+</div><div class="udl-mcq" id="mcq-79c63511" data-correct="1">
+  <div class="udl-mcq__question">What cross-platform software developed by Upside Down Labs allows you to view your signals directly in a web browser without installing anything?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Spike Recorder Mobile</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Chords Software Suite (Chords-Web)</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Arduino Legacy Serial Monitor</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Python Signal Studio</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Chords Software Suite (Chords-Web) is a browser-based tool built by Upside Down Labs. It connects directly to the NPG Lite over BLE or serial and visualises your biosignals in real time — no installation required.</div>
+</div><div class="udl-mcq" id="mcq-406e6c58" data-correct="0">
+  <div class="udl-mcq__question">To update the firmware binaries over a simple command-line interface on your NPG Lite board, which utility do you use?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">NPG Lite Flasher</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">BioAmp Solder Bridge</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Chords LSL Visualizer</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Windows Device Manager</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> NPG Lite Flasher is the dedicated command-line tool for flashing updated firmware onto the NPG Lite board. It simplifies the update process to a single command without needing the Arduino IDE.</div>
+</div><div class="udl-mcq" id="mcq-c15d8a0e" data-correct="1">
+  <div class="udl-mcq__question">What built-in feature protects users from sudden electrostatic shocks when handling electrodes on the NPG Lite?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Onboard rubber coating</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">User ESD Protection components</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">A 5-meter physical distance from AC appliances</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Auto-turnoff power dial</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The NPG Lite includes dedicated ESD (Electrostatic Discharge) Protection components on its input lines. These clamp any high-voltage transients — such as static from touching electrodes — before they can damage the sensitive analog front-end circuitry.</div>
+</div></section>
+<section id="section-2-bio-potential-signal-basics-kit-safety">
+<h3>Section 2: Bio-Potential Signal Basics &amp; Kit Safety<a class="headerlink" href="#section-2-bio-potential-signal-basics-kit-safety" title="Link to this heading">¶</a></h3>
+<div class="udl-mcq" id="mcq-f869b4fc" data-correct="1">
+  <div class="udl-mcq__question">By default, the BioAmp EXG Pill inside the DIY Neuroscience Kit Pro is pre-configured to record which two signals?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">EMG (Muscles) and ECG (Heart)</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">EEG (Brain) and EOG (Eyes)</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Voice and Acoustic commands</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Temperature and Pulse rate</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Out of the box, the BioAmp EXG Pill is configured for EEG (Brain) and EOG (Eyes) recording. Its high-gain, low-noise front-end is optimised for these very small signals in the microvolt range.</div>
+</div><div class="udl-mcq" id="mcq-0abfab72" data-correct="0">
+  <div class="udl-mcq__question">If you want to modify your BioAmp EXG Pill to specifically record clean muscle (EMG) or heart (ECG) data, what hardware step is recommended?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Bridge the specific configuration pads with a solder joint</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Increase the input battery voltage to 24V</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Connect the reference cable to your nose</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Remove the instrumentation amplifier entirely</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The BioAmp EXG Pill has configuration solder pads on the PCB. Bridging the correct pads changes the gain and filter settings, reconfiguring the pill for the higher-amplitude EMG or ECG signals.</div>
+</div><div class="udl-mcq" id="mcq-8fb13239" data-correct="1">
+  <div class="udl-mcq__question">For the absolute best biopotential signal acquisition with any BioAmp setup, what rule must you follow regarding your laptop?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Connect it to a high-speed Ethernet wall wire.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Ensure your laptop is unplugged from the charger and runs purely on battery power.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Keep it stacked directly on top of an AC appliance.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Turn the monitor brightness up to 100%.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Laptop chargers inject 50Hz or 60Hz AC noise into the chassis and ground plane. Running purely on battery power eliminates this noise source, dramatically improving the signal-to-noise ratio for small EEG and EOG signals.</div>
+</div><div class="udl-mcq" id="mcq-2a03da36" data-correct="1">
+  <div class="udl-mcq__question">How far away should you sit from any working AC household appliances to avoid 50Hz/60Hz background grid noise?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">At least 50 centimeters</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">At least 5 meters</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Exactly 100 meters</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Distance does not matter</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> AC appliances radiate electromagnetic fields that couple into electrode cables and skin, adding 50Hz (or 60Hz in some countries) interference. Sitting at least 5 metres away keeps this interference below the noise floor of the amplifier.</div>
+</div><div class="udl-mcq" id="mcq-043892d7" data-correct="1">
+  <div class="udl-mcq__question">Why do we rub a small drop of NuPrep Skin Preparation Gel onto the target skin spot before sticking electrodes?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">To insulate the skin from any electricity.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">To safely remove dead skin cells and dirt, lowering electrical resistance.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">To act as a sweet-smelling permanent glue.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">To test if the user is allergic to the plastic.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The top layer of skin (stratum corneum) is made of dead, keratinised cells that create high electrical resistance. NuPrep gently abrades these cells away and removes surface oils, reducing skin impedance so the electrode picks up a clean, strong biological signal.</div>
+</div></section>
+<section id="section-3-eye-controls-click-photo-dino-games">
+<h3>Section 3: Eye Controls (Click Photo &amp; Dino Games)<a class="headerlink" href="#section-3-eye-controls-click-photo-dino-games" title="Link to this heading">¶</a></h3>
+<div class="udl-mcq" id="mcq-cf2aa2f0" data-correct="2">
+  <div class="udl-mcq__question">When playing the Dino game or snapping a photo hands-free using your eyes (EOG), what physical phenomenon causes the massive voltage spike on your screen?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Heart rate acceleration</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Muscle twitches in your fingers</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">The eyeball rolling slightly upward during a blink (Bell's Phenomenon)</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Sudden high-level concentration changes in the brain</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> During a blink, the eyeball rolls slightly upward — a reflex known as Bell's Phenomenon. The cornea (positive pole) moves rapidly away from the lower electrode, creating a large, sudden change in the cornea-retina potential that appears as a sharp spike on the EOG graph.</div>
+</div><div class="udl-mcq" id="mcq-87aa7d8e" data-correct="1">
+  <div class="udl-mcq__question">To record VERTICAL eye movements (looking up and down or blinking), how should your IN- and IN+ electrodes be placed?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Left temple and right temple side-by-side</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Directly above and below a single eye</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Both on the bony part behind your earlobe</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Flat on the forehead space</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Vertical eye movement shifts the cornea-retina dipole along the vertical axis. Placing one electrode directly above the eye and one directly below captures the full magnitude of this vertical voltage change.</div>
+</div><div class="udl-mcq" id="mcq-9c90df8a" data-correct="1">
+  <div class="udl-mcq__question">If you are setting up a HORIZONTAL eye-tracking interface to move a game cursor left and right, where do the active sensors go?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Above and below the eye</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">On the right side and left side of the eye temples</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">One on each elbow bone</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Directly on the bridge of the nose</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Horizontal eye movement shifts the cornea-retina dipole along the horizontal axis. Placing electrodes at the outer corners of each eye (left temple and right temple) captures the left-right voltage polarity change precisely.</div>
+</div><div class="udl-mcq" id="mcq-67fcf648" data-correct="1">
+  <div class="udl-mcq__question">When using the EOG setup, where should the Reference (REF) electrode cable always be connected?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">On a fleshy part of your bicep</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">On a bony part of your body, like the back side of your earlobe (mastoid)</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Directly on the laptop's metal casing</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Left hanging loose in the air</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The REF electrode must be placed on an electrically neutral, bony site — such as the mastoid (the bony bump behind the ear) — where there is no muscle activity. This gives the differential amplifier a stable ground reference, cancelling common-mode noise.</div>
+</div></section>
+<section id="section-4-flexing-controls-muscle-bioamp-shield-servo-claw">
+<h3>Section 4: Flexing Controls (Muscle BioAmp Shield &amp; Servo Claw)<a class="headerlink" href="#section-4-flexing-controls-muscle-bioamp-shield-servo-claw" title="Link to this heading">¶</a></h3>
+<div class="udl-mcq" id="mcq-2a800892" data-correct="1">
+  <div class="udl-mcq__question">Unlike standalone sensors, what makes the Muscle BioAmp Shield incredibly user-friendly for an Arduino Uno user?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">It connects via a 10-meter auxiliary cord.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">It is an all-in-one shield that stacks cleanly directly on top of the Arduino Uno.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">It reads thoughts instead of muscle contractions.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">It does not require any wires or electrodes.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The Muscle BioAmp Shield is designed as an Arduino shield — it plugs directly onto the Arduino Uno's header pins, forming a single stacked unit with no extra wiring required between the amplifier and the microcontroller.</div>
+</div><div class="udl-mcq" id="mcq-3d3aaf3d" data-correct="1">
+  <div class="udl-mcq__question">What onboard visual indicator does the Muscle BioAmp Shield feature to show your real-time muscle strength without looking at a laptop monitor?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">A tiny LCD text screen</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">An onboard LED Bar Graph that lights up higher the harder you flex</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">A laser projector pointing at the wall</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">A single flashing yellow light</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The Muscle BioAmp Shield has an onboard LED Bar Graph — a row of LEDs that progressively illuminate as EMG amplitude increases. The harder you flex, the more LEDs light up, giving instant visual biofeedback without any software.</div>
+</div><div class="udl-mcq" id="mcq-94c55c4f" data-correct="1">
+  <div class="udl-mcq__question">To listen to the raw crackle of your muscle fibers flexing in real-time, what can you plug into the 3.5mm onboard audio jack of the BioAmp hardware?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">A wireless Wi-Fi mouse</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">A speaker or a pair of wired earphones</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">A smartphone charger cord</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">A 9V power block adapter</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The BioAmp hardware routes the amplified EMG signal to a standard 3.5mm audio jack. Plugging in wired earphones or a small speaker lets you hear the characteristic crackling sound of motor unit action potentials firing as you flex.</div>
+</div><div class="udl-mcq" id="mcq-a1173577" data-correct="1">
+  <div class="udl-mcq__question">When connecting the 3D-printed Servo Claw to the Muscle BioAmp Shield to play the stacking game, what type of pins are you plugging into?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">High-voltage AC mains outlets</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Onboard hobby servo output headers</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">USB-C digital input ports</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Audio auxiliary ports</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The Muscle BioAmp Shield exposes standard 3-pin hobby servo headers (Signal, VCC, GND). These are the universal connector type used by all hobby RC servos, making it straightforward to connect the servo claw without any special adapters.</div>
+</div><div class="udl-mcq" id="mcq-43d48115" data-correct="1">
+  <div class="udl-mcq__question">If your 3D-printed claw won't close all the way when you apply maximum forearm grip strength, how can you tune it?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Squeeze until your arm hurts.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Modify the servo target angle mappings inside the Arduino IDE sketch file.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Add more gel stickers over your ears.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Wrap the claw in insulating duct tape.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The Arduino sketch maps EMG amplitude values to servo angles using a map() function or a custom range. Adjusting the target angle values in the code — for example, changing the maximum angle from 90 to 150 degrees — allows full closure without any hardware changes.</div>
+</div><div class="udl-mcq" id="mcq-37138e00" data-correct="1">
+  <div class="udl-mcq__question">When using the alternative dry-electrode Muscle BioAmp Band instead of sticky gel patches, where should the IN+ and IN- metal snaps face?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Pressed against the bony tip of your elbow</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Snapped tight over the arm near the ulnar nerve line</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Wrapped snugly around your forehead</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Tied around the palm of your hand</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The Muscle BioAmp Band is designed to be wrapped around the forearm with the metal snap electrodes pressed flat against the skin over the muscle belly. The correct placement is along the ulnar nerve line on the inner forearm for reliable EMG capture.</div>
+</div></section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="day5.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Day 5: Advanced HCI/BCI, Research and Applications</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="day3.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Day 3: The Power of Sight &amp; Mind (EOG &amp; EEG)</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Upside Down Labs
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Day 4: Gaming in the Field of HCI and BCI</a><ul>
+<li><a class="reference internal" href="#meet-the-neuro-playground-lite-npg-lite">Meet the Neuro PlayGround Lite (NPG Lite)</a></li>
+<li><a class="reference internal" href="#applications-of-npg-lite">Applications of NPG Lite</a></li>
+<li><a class="reference internal" href="#activity-the-servo-claw-challenge">Activity: The Servo Claw Challenge</a></li>
+<li><a class="reference internal" href="#day-4-quiz">Day 4 Quiz</a><ul>
+<li><a class="reference internal" href="#section-1-neuro-playground-lite-npg-lite-overview">Section 1: Neuro PlayGround Lite (NPG Lite) Overview</a></li>
+<li><a class="reference internal" href="#section-2-bio-potential-signal-basics-kit-safety">Section 2: Bio-Potential Signal Basics &amp; Kit Safety</a></li>
+<li><a class="reference internal" href="#section-3-eye-controls-click-photo-dino-games">Section 3: Eye Controls (Click Photo &amp; Dino Games)</a></li>
+<li><a class="reference internal" href="#section-4-flexing-controls-muscle-bioamp-shield-servo-claw">Section 4: Flexing Controls (Muscle BioAmp Shield &amp; Servo Claw)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=4ebf8126"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/js/mcq.js?v=e62e115d"></script>
+    <script src="../_static/js/udl_ui.js?v=4efe9309"></script>
+    </body>
+</html>

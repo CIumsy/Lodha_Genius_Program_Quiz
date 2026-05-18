@@ -1,0 +1,131 @@
+Day 5: Advanced HCI/BCI, Research and Applications
+====================================================
+
+**Objective:** Demonstrate high-fidelity BCI applications and experience peer review.
+
+----
+
+Hours 1–2: Advanced Case Studies
+----------------------------------
+
+BCI Drone — Controlling a Tello Drone
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The **Tello Drone** connects to a laptop over Wi-Fi. A Python script listens for
+classified biosignal events from the NPG Lite and sends flight commands to the drone.
+
+**How it works:**
+
+1. EMG or EEG signals are streamed wirelessly from NPG Lite to the laptop via BLE
+2. A classification algorithm detects a specific gesture (e.g., jaw clench for EEG,
+   or wrist flex for EMG)
+3. The Python script maps that gesture to a drone command:
+
+   - Flex left wrist → drone turns left
+   - Flex right wrist → drone turns right
+   - Double clench → drone hovers / lands
+
+4. The command is sent over Wi-Fi to the Tello drone in real time
+
+This is the same principle used in **research labs** where paralysed patients learn
+to control robotic arms or computers using only their brain signals.
+
+BCI Car — Wireless Muscle Control
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The **BLE BCI Car** is controlled by EMG signals from your forearm muscles, transmitted
+wirelessly from NPG Lite:
+
+- **Flex right forearm** → car turns right
+- **Flex left forearm** → car turns left
+- **Both forearms relaxed** → car stops
+
+The car uses a simple threshold-based algorithm — no machine learning required. This
+makes it fast and reliable enough for real-time control.
+
+----
+
+Hour 3: The "Mind Flayer" Experiment
+--------------------------------------
+
+This is the most dramatic demonstration in the workshop.
+
+**The Human-to-Human Interface**
+
+One person's muscle signals are used to involuntarily control another person's arm.
+
+**How it works:**
+
+1. **Person A** (the "controller") wears EMG electrodes on their forearm
+2. Their EMG signal is processed and used to trigger a **muscle stimulator**
+3. The stimulator sends a gentle electrical pulse to **Person B's** (the "receiver")
+   arm muscles
+4. Person B's arm moves — even if they try to resist — controlled by Person A's signals
+
+**Important:** The stimulation is safe, non-painful, and brief. This experiment has been
+demonstrated in neuroscience labs worldwide and was popularised by researchers at the
+University of Washington.
+
+**What this teaches:**
+
+- The boundary between "my" body and "your" body can be bridged electrically
+- The same principle underlies **functional electrical stimulation (FES)** used in
+  medical rehabilitation to restore movement in paralysed limbs
+- It raises fascinating questions about agency, identity, and the future of
+  human-computer interfaces
+
+----
+
+Hardware Requirements (Full Course)
+--------------------------------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 80
+
+   * - Quantity
+     - Item
+   * - 24×
+     - DIY Neuroscience Kit - Pro
+   * - 4×
+     - NPG Lite - Ninja Kit
+   * - 2×
+     - Tello Drone
+   * - 2×
+     - BLE-BCI Car
+   * - 10 packs
+     - Gel Electrodes (consumable)
+   * - 5 packs
+     - Alcohol Swabs (consumable)
+
+----
+
+Day 5 Quiz
+----------
+
+.. mcq:: In the BCI Drone experiment, what converts a biosignal into a drone command?
+   :correct: B
+   :explanation: A classification algorithm running on the laptop analyses the incoming biosignal stream and decides which gesture occurred. It then calls the drone's Python API to send the corresponding flight command over Wi-Fi.
+
+   A. The Tello drone's built-in AI
+   B. A classification algorithm on the laptop that maps gestures to Wi-Fi commands
+   C. The BLE radio inside NPG Lite
+   D. The REF electrode detecting Wi-Fi interference
+
+.. mcq:: What is Functional Electrical Stimulation (FES)?
+   :correct: C
+   :explanation: FES delivers controlled electrical pulses to muscles or nerves to produce movement in limbs that a patient cannot voluntarily control. It is used in rehabilitation for spinal cord injury patients.
+
+   A. A method to record EMG at higher frequencies
+   B. A way to improve BLE transmission range
+   C. Controlled electrical pulses delivered to muscles to restore movement in paralysed limbs
+   D. A filter that removes 50 Hz noise from ECG signals
+
+.. mcq:: In the Mind Flayer experiment, whose muscles actually move?
+   :correct: B
+   :explanation: Person B (the receiver) has their muscles stimulated by the device. Their arm moves involuntarily — even if they try to resist — because the electrical stimulation directly triggers the muscle, bypassing Person B's own nervous system.
+
+   A. Person A, the controller
+   B. Person B, the receiver
+   C. Both persons simultaneously
+   D. Neither — the robot arm moves instead

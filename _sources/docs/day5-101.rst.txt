@@ -1,0 +1,34 @@
+:orphan:
+
+Day 5: Advanced HCI/BCI, Research and Applications
+====================================================
+
+Day 5 Quiz
+----------
+
+.. mcq:: In the BCI Drone experiment, what converts a biosignal into a drone command?
+   :correct: B
+   :explanation: A classification algorithm running on the laptop analyses the incoming biosignal stream and decides which gesture occurred. It then calls the drone's Python API to send the corresponding flight command over Wi-Fi.
+
+   A. The Tello drone's built-in AI
+   B. A classification algorithm on the laptop that maps gestures to Wi-Fi commands
+   C. The BLE radio inside NPG Lite
+   D. The REF electrode detecting Wi-Fi interference
+
+.. mcq:: What is Functional Electrical Stimulation (FES)?
+   :correct: C
+   :explanation: FES delivers controlled electrical pulses to muscles or nerves to produce movement in limbs that a patient cannot voluntarily control. It is used in rehabilitation for spinal cord injury patients.
+
+   A. A method to record EMG at higher frequencies
+   B. A way to improve BLE transmission range
+   C. Controlled electrical pulses delivered to muscles to restore movement in paralysed limbs
+   D. A filter that removes 50 Hz noise from ECG signals
+
+.. mcq:: In the Mind Flayer experiment, whose muscles actually move?
+   :correct: B
+   :explanation: Person B (the receiver) has their muscles stimulated by the device. Their arm moves involuntarily, even if they try to resist, because the electrical stimulation directly triggers the muscle, bypassing Person B's own nervous system.
+
+   A. Person A, the controller
+   B. Person B, the receiver
+   C. Both persons simultaneously
+   D. Neither, the robot arm moves instead

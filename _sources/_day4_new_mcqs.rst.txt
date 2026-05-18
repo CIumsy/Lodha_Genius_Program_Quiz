@@ -1,0 +1,192 @@
+
+Section 1: Neuro PlayGround Lite (NPG Lite) Overview
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: What distinct hardware layout style does the Neuro PlayGround Lite (NPG Lite) follow to easily stack expansion modules?
+   :correct: B
+   :explanation: The NPG Lite follows the Adafruit Feather form-factor, a widely adopted open standard that makes it easy to stack compatible "Wing" shields and expansion boards directly on top of the main board.
+
+   A. Raspberry Pi HAT form-factor
+   B. Adafruit Feather form-factor
+   C. Arduino Mega dual-row layout
+   D. Standalone mikroBUS format
+
+.. mcq:: Which wireless communications standard does the NPG Lite natively support for a wireless, hassle-free signal experience?
+   :correct: C
+   :explanation: The NPG Lite has an onboard Bluetooth / Wi-Fi module, allowing it to stream biosignals wirelessly to a laptop, phone, or web browser without any USB cable — essential for free-movement BCI games.
+
+   A. Infrared Line-of-Sight
+   B. Cellular 5G
+   C. Bluetooth / Wi-Fi mesh networking
+   D. AM/FM Radio transmission
+
+.. mcq:: What cross-platform software developed by Upside Down Labs allows you to view your signals directly in a web browser without installing anything?
+   :correct: B
+   :explanation: Chords Software Suite (Chords-Web) is a browser-based tool built by Upside Down Labs. It connects directly to the NPG Lite over BLE or serial and visualises your biosignals in real time — no installation required.
+
+   A. Spike Recorder Mobile
+   B. Chords Software Suite (Chords-Web)
+   C. Arduino Legacy Serial Monitor
+   D. Python Signal Studio
+
+.. mcq:: To update the firmware binaries over a simple command-line interface on your NPG Lite board, which utility do you use?
+   :correct: A
+   :explanation: NPG Lite Flasher is the dedicated command-line tool for flashing updated firmware onto the NPG Lite board. It simplifies the update process to a single command without needing the Arduino IDE.
+
+   A. NPG Lite Flasher
+   B. BioAmp Solder Bridge
+   C. Chords LSL Visualizer
+   D. Windows Device Manager
+
+.. mcq:: What built-in feature protects users from sudden electrostatic shocks when handling electrodes on the NPG Lite?
+   :correct: B
+   :explanation: The NPG Lite includes dedicated ESD (Electrostatic Discharge) Protection components on its input lines. These clamp any high-voltage transients — such as static from touching electrodes — before they can damage the sensitive analog front-end circuitry.
+
+   A. Onboard rubber coating
+   B. User ESD Protection components
+   C. A 5-meter physical distance from AC appliances
+   D. Auto-turnoff power dial
+
+Section 2: Bio-Potential Signal Basics & Kit Safety
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: By default, the BioAmp EXG Pill inside the DIY Neuroscience Kit Pro is pre-configured to record which two signals?
+   :correct: B
+   :explanation: Out of the box, the BioAmp EXG Pill is configured for EEG (Brain) and EOG (Eyes) recording. Its high-gain, low-noise front-end is optimised for these very small signals in the microvolt range.
+
+   A. EMG (Muscles) and ECG (Heart)
+   B. EEG (Brain) and EOG (Eyes)
+   C. Voice and Acoustic commands
+   D. Temperature and Pulse rate
+
+.. mcq:: If you want to modify your BioAmp EXG Pill to specifically record clean muscle (EMG) or heart (ECG) data, what hardware step is recommended?
+   :correct: A
+   :explanation: The BioAmp EXG Pill has configuration solder pads on the PCB. Bridging the correct pads changes the gain and filter settings, reconfiguring the pill for the higher-amplitude EMG or ECG signals.
+
+   A. Bridge the specific configuration pads with a solder joint
+   B. Increase the input battery voltage to 24V
+   C. Connect the reference cable to your nose
+   D. Remove the instrumentation amplifier entirely
+
+.. mcq:: For the absolute best biopotential signal acquisition with any BioAmp setup, what rule must you follow regarding your laptop?
+   :correct: B
+   :explanation: Laptop chargers inject 50Hz or 60Hz AC noise into the chassis and ground plane. Running purely on battery power eliminates this noise source, dramatically improving the signal-to-noise ratio for small EEG and EOG signals.
+
+   A. Connect it to a high-speed Ethernet wall wire.
+   B. Ensure your laptop is unplugged from the charger and runs purely on battery power.
+   C. Keep it stacked directly on top of an AC appliance.
+   D. Turn the monitor brightness up to 100%.
+
+.. mcq:: How far away should you sit from any working AC household appliances to avoid 50Hz/60Hz background grid noise?
+   :correct: B
+   :explanation: AC appliances radiate electromagnetic fields that couple into electrode cables and skin, adding 50Hz (or 60Hz in some countries) interference. Sitting at least 5 metres away keeps this interference below the noise floor of the amplifier.
+
+   A. At least 50 centimeters
+   B. At least 5 meters
+   C. Exactly 100 meters
+   D. Distance does not matter
+
+.. mcq:: Why do we rub a small drop of NuPrep Skin Preparation Gel onto the target skin spot before sticking electrodes?
+   :correct: B
+   :explanation: The top layer of skin (stratum corneum) is made of dead, keratinised cells that create high electrical resistance. NuPrep gently abrades these cells away and removes surface oils, reducing skin impedance so the electrode picks up a clean, strong biological signal.
+
+   A. To insulate the skin from any electricity.
+   B. To safely remove dead skin cells and dirt, lowering electrical resistance.
+   C. To act as a sweet-smelling permanent glue.
+   D. To test if the user is allergic to the plastic.
+
+Section 3: Eye Controls (Click Photo & Dino Games)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: When playing the Dino game or snapping a photo hands-free using your eyes (EOG), what physical phenomenon causes the massive voltage spike on your screen?
+   :correct: C
+   :explanation: During a blink, the eyeball rolls slightly upward — a reflex known as Bell's Phenomenon. The cornea (positive pole) moves rapidly away from the lower electrode, creating a large, sudden change in the cornea-retina potential that appears as a sharp spike on the EOG graph.
+
+   A. Heart rate acceleration
+   B. Muscle twitches in your fingers
+   C. The eyeball rolling slightly upward during a blink (Bell's Phenomenon)
+   D. Sudden high-level concentration changes in the brain
+
+.. mcq:: To record VERTICAL eye movements (looking up and down or blinking), how should your IN- and IN+ electrodes be placed?
+   :correct: B
+   :explanation: Vertical eye movement shifts the cornea-retina dipole along the vertical axis. Placing one electrode directly above the eye and one directly below captures the full magnitude of this vertical voltage change.
+
+   A. Left temple and right temple side-by-side
+   B. Directly above and below a single eye
+   C. Both on the bony part behind your earlobe
+   D. Flat on the forehead space
+
+.. mcq:: If you are setting up a HORIZONTAL eye-tracking interface to move a game cursor left and right, where do the active sensors go?
+   :correct: B
+   :explanation: Horizontal eye movement shifts the cornea-retina dipole along the horizontal axis. Placing electrodes at the outer corners of each eye (left temple and right temple) captures the left-right voltage polarity change precisely.
+
+   A. Above and below the eye
+   B. On the right side and left side of the eye temples
+   C. One on each elbow bone
+   D. Directly on the bridge of the nose
+
+.. mcq:: When using the EOG setup, where should the Reference (REF) electrode cable always be connected?
+   :correct: B
+   :explanation: The REF electrode must be placed on an electrically neutral, bony site — such as the mastoid (the bony bump behind the ear) — where there is no muscle activity. This gives the differential amplifier a stable ground reference, cancelling common-mode noise.
+
+   A. On a fleshy part of your bicep
+   B. On a bony part of your body, like the back side of your earlobe (mastoid)
+   C. Directly on the laptop's metal casing
+   D. Left hanging loose in the air
+
+Section 4: Flexing Controls (Muscle BioAmp Shield & Servo Claw)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mcq:: Unlike standalone sensors, what makes the Muscle BioAmp Shield incredibly user-friendly for an Arduino Uno user?
+   :correct: B
+   :explanation: The Muscle BioAmp Shield is designed as an Arduino shield — it plugs directly onto the Arduino Uno's header pins, forming a single stacked unit with no extra wiring required between the amplifier and the microcontroller.
+
+   A. It connects via a 10-meter auxiliary cord.
+   B. It is an all-in-one shield that stacks cleanly directly on top of the Arduino Uno.
+   C. It reads thoughts instead of muscle contractions.
+   D. It does not require any wires or electrodes.
+
+.. mcq:: What onboard visual indicator does the Muscle BioAmp Shield feature to show your real-time muscle strength without looking at a laptop monitor?
+   :correct: B
+   :explanation: The Muscle BioAmp Shield has an onboard LED Bar Graph — a row of LEDs that progressively illuminate as EMG amplitude increases. The harder you flex, the more LEDs light up, giving instant visual biofeedback without any software.
+
+   A. A tiny LCD text screen
+   B. An onboard LED Bar Graph that lights up higher the harder you flex
+   C. A laser projector pointing at the wall
+   D. A single flashing yellow light
+
+.. mcq:: To listen to the raw crackle of your muscle fibers flexing in real-time, what can you plug into the 3.5mm onboard audio jack of the BioAmp hardware?
+   :correct: B
+   :explanation: The BioAmp hardware routes the amplified EMG signal to a standard 3.5mm audio jack. Plugging in wired earphones or a small speaker lets you hear the characteristic crackling sound of motor unit action potentials firing as you flex.
+
+   A. A wireless Wi-Fi mouse
+   B. A speaker or a pair of wired earphones
+   C. A smartphone charger cord
+   D. A 9V power block adapter
+
+.. mcq:: When connecting the 3D-printed Servo Claw to the Muscle BioAmp Shield to play the stacking game, what type of pins are you plugging into?
+   :correct: B
+   :explanation: The Muscle BioAmp Shield exposes standard 3-pin hobby servo headers (Signal, VCC, GND). These are the universal connector type used by all hobby RC servos, making it straightforward to connect the servo claw without any special adapters.
+
+   A. High-voltage AC mains outlets
+   B. Onboard hobby servo output headers
+   C. USB-C digital input ports
+   D. Audio auxiliary ports
+
+.. mcq:: If your 3D-printed claw won't close all the way when you apply maximum forearm grip strength, how can you tune it?
+   :correct: B
+   :explanation: The Arduino sketch maps EMG amplitude values to servo angles using a map() function or a custom range. Adjusting the target angle values in the code — for example, changing the maximum angle from 90 to 150 degrees — allows full closure without any hardware changes.
+
+   A. Squeeze until your arm hurts.
+   B. Modify the servo target angle mappings inside the Arduino IDE sketch file.
+   C. Add more gel stickers over your ears.
+   D. Wrap the claw in insulating duct tape.
+
+.. mcq:: When using the alternative dry-electrode Muscle BioAmp Band instead of sticky gel patches, where should the IN+ and IN- metal snaps face?
+   :correct: B
+   :explanation: The Muscle BioAmp Band is designed to be wrapped around the forearm with the metal snap electrodes pressed flat against the skin over the muscle belly. The correct placement is along the ulnar nerve line on the inner forearm for reliable EMG capture.
+
+   A. Pressed against the bony tip of your elbow
+   B. Snapped tight over the arm near the ulnar nerve line
+   C. Wrapped snugly around your forehead
+   D. Tied around the palm of your hand

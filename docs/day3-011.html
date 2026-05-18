@@ -1,0 +1,617 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html">
+        <link rel="prefetch" href="../_static/LOGO.png" as="image">
+
+    <link rel="shortcut icon" href="../_static/LOGO.png"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Day 3: The Power of Sight &amp; Mind (EOG &amp; EEG) - Upside Down Labs</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/udl_custom.css?v=c08afb54" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --color-brand-primary: #7c3aed;
+  --color-brand-content: #7c3aed;
+  --color-background-primary: #000000;
+  --color-background-secondary: #ffffff;
+  --color-foreground-primary: #111827;
+  --color-foreground-secondary: #6b7280;
+  --color-sidebar-background: #ffffff;
+  --color-sidebar-background-border: #f3f0ff;
+  --color-sidebar-brand-text: #111827;
+  --color-sidebar-caption-text: #9ca3af;
+  --color-sidebar-link-text: #374151;
+  --color-sidebar-link-text--top-level: #111827;
+  --color-sidebar-item-background--current: #f5f3ff;
+  --color-sidebar-item-background--hover: #fafafa;
+  --color-sidebar-search-background: #f9fafb;
+  --color-sidebar-search-border-color: #d8b4fe;
+  --color-sidebar-search-icon: #7c3aed;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Upside Down Labs</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/LOGO.png" alt="Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/docs/day3-011.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="day-3-the-power-of-sight-mind-eog-eeg">
+<h1>Day 3: The Power of Sight &amp; Mind (EOG &amp; EEG)<a class="headerlink" href="#day-3-the-power-of-sight-mind-eog-eeg" title="Link to this heading">¶</a></h1>
+<section id="hour-1-eog-eyes-as-a-controller">
+<h2>Hour 1: EOG, Eyes as a Controller<a class="headerlink" href="#hour-1-eog-eyes-as-a-controller" title="Link to this heading">¶</a></h2>
+<div class="udl-mcq" id="mcq-2f9939b9" data-correct="1">
+  <div class="udl-mcq__question">Which brain wave is most prominent when you close your eyes and relax?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Delta</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Alpha</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Beta</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Gamma</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Alpha waves (8-12 Hz) are the signature of a calm, relaxed, awake state. They are strongest when your eyes are closed and disappear (alpha blocking) as soon as you open your eyes or start concentrating.</div>
+</div><div class="udl-mcq" id="mcq-21d341b4" data-correct="0">
+  <div class="udl-mcq__question">Your eye acts like a tiny battery. Which part carries the positive charge?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">The cornea (front)</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">The retina (back)</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">The eyelid</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">The lens</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The cornea (front of the eye) is electrically positive, while the retina (back) is negative. This makes the eyeball a biological electrical dipole whose orientation changes as you move your eye.</div>
+</div><div class="udl-mcq" id="mcq-6b28a714" data-correct="1">
+  <div class="udl-mcq__question">To track whether a student is looking UP or DOWN, where should you place the electrodes?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Left temple and right temple</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Above the eye and below the eye</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">On the tip of the nose</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">On the back of the neck</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Vertical eye movements change the voltage difference along the vertical axis. Placing one electrode above the eye and one below captures this up-down dipole shift accurately.</div>
+</div><div class="udl-mcq" id="mcq-6108ad75" data-correct="1">
+  <div class="udl-mcq__question">Why does a blink show up as a massive spike on an EOG graph?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">The brain shuts down completely.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">The eyelid moving over the cornea creates a sharp electrical change.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">The eye turns upside down.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">The iris changes color.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> When the eyelid sweeps over the cornea during a blink, it rapidly changes the orientation of the eye dipole, creating a large and sudden voltage shift that appears as a sharp spike.</div>
+</div><div class="udl-mcq" id="mcq-a4d89935" data-correct="1">
+  <div class="udl-mcq__question">What is a major advantage of EOG over camera-based eye trackers?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">It reads exact thoughts.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">It requires less computer power and works even with eyes closed.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">It does not need to touch the skin.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">It shoots lasers to track movement.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> EOG requires only a few electrodes and minimal computing resources. It also continues to detect eye movement in complete darkness or even when the eyes are closed, unlike cameras.</div>
+</div><div class="udl-mcq" id="mcq-f6eae3b9" data-correct="1">
+  <div class="udl-mcq__question">While recording EOG, laughing causes messy, chaotic waves. What are these called?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Brainwaves</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Muscle artifacts</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Neural networks</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Voltage drops</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Facial muscle contractions from laughing, talking, or chewing generate their own EMG signals that contaminate the EOG recording. These unwanted signals are called muscle artifacts.</div>
+</div><div class="udl-mcq" id="mcq-4c078026" data-correct="2">
+  <div class="udl-mcq__question">Your EOG signal slowly drifts upward over time even when staring straight. How do you fix this in code?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Multiply the data by a million</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Tell the user not to blink</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Use a baseline correction or high-pass filter</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Restart the computer</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Slow baseline drift is common in biopotential recordings due to electrode-skin chemistry changing over time. A high-pass filter removes the slow drift while keeping the fast eye-movement signals intact. Baseline correction achieves the same effect.</div>
+</div><div class="udl-mcq" id="mcq-0685c568" data-correct="1">
+  <div class="udl-mcq__question">Why do we need a ground electrode behind the ear or on the forehead?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">To shock the user when they make a mistake</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">To cancel out ambient electrical noise from the room</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">To hold the headset in place</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">To measure skull temperature</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The ground (reference) electrode provides a common electrical baseline for the amplifier. Any ambient electrical noise present equally at all electrodes gets subtracted out, leaving only the true biological signal.</div>
+</div><div class="udl-mcq" id="mcq-70c14352" data-correct="0">
+  <div class="udl-mcq__question">How does a threshold help an EOG algorithm?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">It ignores tiny random eye tremors and only triggers on big, deliberate looks.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">It randomizes the cursor movements.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">It speeds up the hardware.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">It saves battery life.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Eyes naturally make tiny involuntary tremors called microsaccades. A threshold filters these out so only large, intentional looks trigger a command, preventing accidental activations.</div>
+</div></section>
+<section id="hour-2-introduction-to-eeg-bci">
+<h2>Hour 2: Introduction to EEG &amp; BCI<a class="headerlink" href="#hour-2-introduction-to-eeg-bci" title="Link to this heading">¶</a></h2>
+<div class="udl-mcq" id="mcq-5194985e" data-correct="1">
+  <div class="udl-mcq__question">What are scalp EEG electrodes actually listening to?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">The sound of blood rushing</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">The synchronized electrical activity of millions of neurons</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Physical movements of skull bones</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">English words forming in the mind</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Individual neuron spikes are far too small to detect through the skull. EEG picks up the combined, synchronized electrical fields produced when large populations of neurons fire together, creating voltages detectable at the scalp.</div>
+</div><div class="udl-mcq" id="mcq-2a4b3ee1" data-correct="2">
+  <div class="udl-mcq__question">What are the three essential steps in a Brain-Computer Interface (BCI) loop?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Type, click, print</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Drill, implant, shock</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Record signals, decode meaning, output action</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Read, write, memorize</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Every BCI follows this pipeline: (1) acquire the raw brain signal with electrodes, (2) use algorithms to decode what the signal means, and (3) send the decoded command to a device such as a cursor, wheelchair, or robotic arm.</div>
+</div><div class="udl-mcq" id="mcq-166e11af" data-correct="3">
+  <div class="udl-mcq__question">You are solving a difficult math problem under pressure. Which fast brainwave (12-30 Hz) increases?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Delta</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Theta</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Alpha</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Beta</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Beta waves (13-30 Hz) are associated with active, analytical thinking, concentration, and alertness. Challenging cognitive tasks consistently increase beta power in EEG recordings.</div>
+</div><div class="udl-mcq" id="mcq-4207991a" data-correct="1">
+  <div class="udl-mcq__question">How does a Neurofeedback meditation app help you calm down?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">It gives you a mild shock when stressed.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">It plays peaceful sounds only when your relaxation waves increase.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">It forces your eyes open.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">It flashes bright lights.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Neurofeedback uses real-time EEG data to give the user instant feedback. When the app detects increasing alpha (relaxation) waves, it rewards the user with calming audio, reinforcing the relaxed brain state through conditioning.</div>
+</div><div class="udl-mcq" id="mcq-174f5eef" data-correct="1">
+  <div class="udl-mcq__question">Why must we use conductive gel or paste with EEG electrodes?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">To glue the sensor permanently to the head</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">To bypass the electrical resistance of hair and dry skin</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">To cool down the brain</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">To dye the hair for tracking</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Hair and dry skin have high electrical resistance that attenuates the already tiny EEG signals (10-100 uV). Conductive gel fills the microscopic gaps between the electrode and skin, dramatically reducing impedance and improving signal quality.</div>
+</div><div class="udl-mcq" id="mcq-c9363ae2" data-correct="1">
+  <div class="udl-mcq__question">Clenching your jaw during an EEG test ruins the data. Why?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">The brain stops working.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Jaw muscles create massive electrical noise (EMG) that drowns out the brain waves.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">The headset breaks under pressure.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">It triggers deep meditation.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Jaw and temple muscles produce EMG signals many times larger than brain waves. These muscle artifacts completely overwhelm the tiny EEG voltages, making the recording unusable until the participant relaxes their jaw.</div>
+</div><div class="udl-mcq" id="mcq-744b88b7" data-correct="1">
+  <div class="udl-mcq__question">If you want to capture brainwaves from the visual cortex, where should you place the sensor?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">On the bridge of the nose</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">At the very back of the head (occipital lobe)</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">On the tip of the ear</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">On the forehead</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> The visual cortex is located in the occipital lobe at the very back of the head. EEG electrodes placed there (positions O1, O2, Oz in the 10-20 system) pick up visual processing signals most clearly.</div>
+</div></section>
+<section id="hour-3-hci-bci-for-fun-emg-games">
+<h2>Hour 3: HCI &amp; BCI for Fun (EMG Games)<a class="headerlink" href="#hour-3-hci-bci-for-fun-emg-games" title="Link to this heading">¶</a></h2>
+<div class="udl-mcq" id="mcq-9d32c1d1" data-correct="2">
+  <div class="udl-mcq__question">You play the Chrome Dino game by flexing your arm to jump. What signal is this?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">EEG</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">EOG</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">EMG</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">ECG</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Flexing your arm involves contracting skeletal muscles, which generates an EMG (Electromyogram) signal. The Muscle BioAmp Shield captures this signal and the thresholding algorithm triggers the jump command when the EMG crosses a set level.</div>
+</div><div class="udl-mcq" id="mcq-9cc168df" data-correct="1">
+  <div class="udl-mcq__question">Your Dino jumps constantly even when your arm is relaxed. What should you do to your code threshold?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Lower it to zero</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Increase the threshold value so it requires a stronger flex</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">Delete the code</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Turn off the monitor</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> If the threshold is too low, even baseline noise or tiny involuntary muscle activity triggers a jump. Raising the threshold means only a deliberate, strong flex will cross it, eliminating false triggers.</div>
+</div><div class="udl-mcq" id="mcq-0419bd06" data-correct="1">
+  <div class="udl-mcq__question">What makes an HCI biosignal interface different from a standard game controller?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">It does not use any electricity.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">It reads body signals directly without needing a mechanical button press.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">It only works when you are happy.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">It cannot play video games.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Traditional controllers require deliberate mechanical actions such as button presses or joystick movement. A biosignal HCI interface reads body electrical signals, muscle contractions, eye movements, or brain waves, directly, enabling hands-free or movement-free control.</div>
+</div><div class="udl-mcq" id="mcq-1ae6be45" data-correct="0">
+  <div class="udl-mcq__question">Why is a muscle-controlled game (EMG) easier for beginners than a brain-controlled game (EEG)?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Muscle signals are voluntary, strong, and easy to control instantly.</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">The brain does not make electricity.</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">EMG signals do not use a computer.</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">EEG waves are too large to capture.</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> Muscles produce strong (millivolt-level), deliberate, instantly controllable signals. Brain waves are extremely small (microvolt-level), highly variable, and require training and practice to control reliably.</div>
+</div><div class="udl-mcq" id="mcq-78a022b0" data-correct="2">
+  <div class="udl-mcq__question">EOG, EEG, and EMG all measure body electricity. What is the ultimate biological source of these voltages?</div>
+  <div class="udl-mcq__options">
+    <div class="udl-mcq__option" data-index="0" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">A</span><span class="udl-mcq__option-text">Metal wires in our veins</span></div>
+    <div class="udl-mcq__option" data-index="1" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">B</span><span class="udl-mcq__option-text">Static friction from walking on carpets</span></div>
+    <div class="udl-mcq__option" data-index="2" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">C</span><span class="udl-mcq__option-text">The movement of charged ions across cellular membranes</span></div>
+    <div class="udl-mcq__option" data-index="3" role="radio" aria-checked="false" tabindex="0"><span class="udl-mcq__option-label">D</span><span class="udl-mcq__option-text">Tiny nuclear reactions in the stomach</span></div>
+  </div>
+  <div class="udl-mcq__actions">
+    <button class="udl-mcq__submit" disabled>Submit</button>
+    <button class="udl-mcq__reset" style="display:none">Try Again</button>
+  </div>
+  <div class="udl-mcq__feedback" aria-live="polite"></div>
+  <div class="udl-mcq__explanation" style="display:none"><strong>Explanation:</strong> All biological electrical signals originate from the same fundamental process: ions (charged atoms like Na+, K+, Ca2+) flowing across the cell membrane through ion channels. This ionic current creates the voltage differences that electrodes detect on the skin surface.</div>
+</div></section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Upside Down Labs
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Day 3: The Power of Sight &amp; Mind (EOG &amp; EEG)</a><ul>
+<li><a class="reference internal" href="#hour-1-eog-eyes-as-a-controller">Hour 1: EOG, Eyes as a Controller</a></li>
+<li><a class="reference internal" href="#hour-2-introduction-to-eeg-bci">Hour 2: Introduction to EEG &amp; BCI</a></li>
+<li><a class="reference internal" href="#hour-3-hci-bci-for-fun-emg-games">Hour 3: HCI &amp; BCI for Fun (EMG Games)</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=4ebf8126"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/js/mcq.js?v=a0b00c7d"></script>
+    <script src="../_static/js/udl_ui.js?v=2d904df3"></script>
+    </body>
+</html>
